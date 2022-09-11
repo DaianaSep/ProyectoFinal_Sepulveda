@@ -23,8 +23,7 @@ setTimeout(() => {
             <textarea style="width:300px; height:100px; margin-bottom:15px; size:200; padding:10px"> </textarea>
             <p> ¿Qué fue lo que menos te gustó? </p>
             <textarea style="width:300px; height:100px; margin-bottom:15px; size:200; padding:10px"> </textarea>
-        </form>
-        `,
+        </form>`,
         showCancelButton: true,
         confirmButtonText: 'Enviar',
         cancelButtonText: 'Omitir',
@@ -43,13 +42,13 @@ setTimeout(() => {
 
 //Funciones
 //Toma el número seleccionado del csat y lo diferencia del resto para visualizar el elegido por el usuario
-function selectedNum(){
+function selectedNum() {
     const num1 = document.getElementById("num1")
     const num2 = document.getElementById("num2")
     const num3 = document.getElementById("num3")
     const num4 = document.getElementById("num4")
     const num5 = document.getElementById("num5")
-    
+
     num1.addEventListener('click', () => {
         num1.style.color = "black"
         num2.style.color = "white"

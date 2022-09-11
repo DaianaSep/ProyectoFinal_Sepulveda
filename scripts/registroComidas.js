@@ -1,4 +1,4 @@
-//Variables
+//Variables y constantes
 let seguirCarga, res, totalCalorias, caloriasDia = 0, mje
 let alimentos = []
 
@@ -20,7 +20,7 @@ const rtaPorcentajes = document.getElementById("porcentajes-div")
 const btnPorcentajes = document.getElementById("porcentajes")
 const btnDeleteAll = document.getElementById("deleteAll")
 
-//clases
+//Clases
 class Alimentos {
     constructor(nombre, tipo, calorias, porcion) {
         this._nombre = nombre
@@ -102,7 +102,7 @@ formAlimentos.addEventListener('submit', (e) => {//Al hacer click en el botón d
 })
 
 botonAlim.addEventListener('click', () => { // Al hacer click en mostrar alimentos carga los alimentos añadidos y permite eliminar uno a uno
-    if (alimentos.length == 0) {arrayVacio()}
+    if (alimentos.length == 0) { arrayVacio() }
     regCom.innerHTML = ""
     alimentos.length == 0 ? (contReg.style.display = "none") : (contReg.style.display = "block")
     alimentos.length == 0 ? (titReg.style.display = "none") : (titReg.style.display = "block")
@@ -134,7 +134,7 @@ btnPorcentajes.addEventListener("click", () => { // Al hacer click en Ver calor�
     filtrarGrupo()
 })
 
-btnVolverAlim.addEventListener("click", () =>{ // la hacer click en volver regresa a la página de inicio
+btnVolverAlim.addEventListener("click", () => { // la hacer click en volver regresa a la página de inicio
     divCards.style.display = ""
     contAlimentos.style.display = "none"
     contReg.style.display = "none"
@@ -143,7 +143,7 @@ btnVolverAlim.addEventListener("click", () =>{ // la hacer click en volver regre
 })
 
 btnDeleteAll.addEventListener("click", () => { // Al hacer clic en Eliminar todo se borran todos los alimentos ingresados
-    alimentos.forEach(()=>{
+    alimentos.forEach(() => {
         alimentos.splice(0, alimentos.length)
     })
     localStorage.removeItem('alimentos');

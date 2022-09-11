@@ -1,4 +1,4 @@
-//Variables
+//Variables y constantes
 let porcGCH, porcGCM
 const buttonGC = document.getElementById("calcGC")
 const contResGC = document.getElementById("containerResultadosGC")
@@ -51,7 +51,7 @@ formGC.addEventListener('submit', (e) => { // Al hacer click en el botón de sub
     document.getElementById("formCalculadoraGC").reset()
 })
 
-btnVolverGC.addEventListener("click", () =>{ // la hacer click en volver regresa a la página de inicio
+btnVolverGC.addEventListener("click", () => { // la hacer click en volver regresa a la página de inicio
     divCards.style.display = ""
     contResGC.style.display = "none"
     formGC.style.display = "none"
@@ -85,27 +85,27 @@ function resultadoGC(genero, peso, altura, edad) {
 }
 
 //genera alerta de interpretación de Porcentaje de Grasa Corporal para hombres
-function infoGCH(){
+function infoGCH() {
     Swal.fire({
         title: 'Interpretación de Porcentaje de Grasa Corporal para hombres',
-        html:'<img style="width:380px; height:250px" src="Images/bodyfat_table_men_ES.jpg"></img>',
+        html: '<img style="width:380px; height:250px" src="Images/bodyfat_table_men_ES.jpg"></img>',
         customClass: {
             confirmButton: 'swalBtn',
-            title:'swalTitle'
+            title: 'swalTitle'
         }
-      })
+    })
 }
 
 //genera alerta de interpretación de Porcentaje de Grasa Corporal para mujeres
-function infoGCM(){
+function infoGCM() {
     Swal.fire({
         title: 'Interpretación del Porcentaje de Grasa Corporal para mujeres',
-        html:'<img style="width:380px; height:250px" src="Images/bodyfat_table_women_ES.jpg"></img>',
+        html: '<img style="width:380px; height:250px" src="Images/bodyfat_table_women_ES.jpg"></img>',
         customClass: {
             confirmButton: 'swalBtn',
-            title:'swalTitle'
+            title: 'swalTitle'
 
         }
-      })
+    })
 }
 

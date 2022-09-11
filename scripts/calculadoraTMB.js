@@ -1,11 +1,11 @@
-//Variables
+//Variables y constantes
 let calculoTmbH, calculoTmbM, edad
 const resTMB = document.getElementById("resTMB")
 const contTMB = document.getElementById("containerResultadosTMB")
 const tit = document.getElementById("titleResultadosTMB")
 const buttonTmb = document.getElementById("tmb")
 const inputEdad = document.getElementById("inputEdad2")
-const inputPesoTmb= document.getElementById("inputPeso2")
+const inputPesoTmb = document.getElementById("inputPeso2")
 const inputAlturaTmb = document.getElementById("inputAltura2")
 const formTmb = document.getElementById("formCalculadoraTMB")
 const contFormTMB = document.getElementById("containerFormTMB")
@@ -40,7 +40,7 @@ inputEdad.addEventListener('input', () => {// Ingresa la edad y se guarda en la 
 formTmb.addEventListener('submit', (e) => { // Al hacer click en el botón de submit se muestra el resultado
     e.preventDefault()
 
-    for (let radio of radios){
+    for (let radio of radios) {
         if (radio.checked) {
             genero = radio.value
         }
@@ -49,7 +49,7 @@ formTmb.addEventListener('submit', (e) => { // Al hacer click en el botón de su
     document.getElementById("formCalculadoraTMB").reset()
 })
 
-btnVolverTmb.addEventListener("click", () =>{ // la hacer click en volver regresa a la página de inicio
+btnVolverTmb.addEventListener("click", () => { // la hacer click en volver regresa a la página de inicio
     divCards.style.display = ""
     contTMB.style.display = "none"
     contFormTMB.style.display = "none"
@@ -88,7 +88,7 @@ function resultadoTmb(genero = "", peso = 0, altura = 0, edad = 0) {
 }
 
 //genera alerta de interpretación de TMB
-function infoTmb(){
+function infoTmb() {
     Swal.fire({
         title: 'Interpretación de la TMB',
         imageUrl: 'Images/macro-calculator.jpg',
@@ -101,6 +101,6 @@ function infoTmb(){
             confirmButton: 'swalBtn',
             title: 'titleTmb'
         }
-      })
+    })
 }
 

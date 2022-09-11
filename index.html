@@ -90,6 +90,22 @@
         <div class="containerForm" id="containerFormIMC">
             <button class="buttonForm" id="volver"> <i class="fa-solid fa-circle-chevron-left"></i> Volver</button>
             <h4 class="titleForm" id="titleForm">Completa tus datos para calcular tu Índice de Masa Corporal</h4>
+            <div id="txtImc" class="col-sm-8 sm-4">
+                <div id="divImg" class="col-sm-2 sm-2">
+                    <img id="imgImc" src="/Images/imgIMC.jpg" alt="imgIMC">
+                </div>
+                <div id="divImc" class="col-sm-8 sm-2">
+                    <p id="pInfoImc">
+                        Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se
+                        calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso
+                        (kg)/[estatura (m)]2).
+                    </p>
+                    <p id="pInfoImc2">
+                        Calcula tu IMC y descubre si tu índice se encuentra dentro de los valores saludables
+                    </p>
+                    <img src="/Images/arrow.png" alt="imgFlecha" id="arrowImc">
+                </div>
+            </div>
             <form id="formCalculadoraIMC" class="formCalculadoras">
                 <div class=" mb-3">
                     <label class="form-label">Género:</label>
@@ -116,6 +132,24 @@
         <div class="containerForm" id="containerFormTMB">
             <button class="buttonForm" id="volverTmb"> <i class="fa-solid fa-circle-chevron-left"></i> Volver</button>
             <h4 class="titleForm" id="titleForm">Completa tus datos para calcular tu Tasa Metabólica Basal</h4>
+            <div id="txtTmb" class="col-sm-8 sm-4">
+                <div class="col-sm-2 sm-2">
+                    <img id="imgTmb" src="/Images/imgTmb.jpg" alt="imgTMB">
+                </div>
+                <div id="divTmb" class="col-sm-8 sm-2">
+                    <p id="pInfoTmb">
+                        El índice metabólico basal o la tasa metabólica basal (TMB) indica la cantidad de calorías que
+                        necesita el cuerpo para realizar las funciones metabólicas básicas, como mantener los órganos
+                        vitales en funcionamiento. La TMB se calcula en estado inactivo y en ayunas. Para más precisión,
+                        la TMB debe calcularse después de un periodo de ayunas de 12 horas.
+                    </p>
+                    <p id="pInfoTmb2">
+                        Calcula tu TMB y descubre cómo usar el cálculo del metabolismo basal
+                        para la pérdida de peso
+                    </p>
+                    <img src="/Images/arrow.png" alt="imgFlecha" id="arrowTmb">
+                </div>
+            </div>
             <form id="formCalculadoraTMB" class="formCalculadoras">
                 <div class=" mb-3">
                     <label class="form-label">Género:</label>
@@ -144,15 +178,31 @@
 
         <!-- form Registro alimentos -->
         <div class="containerForm" id="containerFormAlimentos">
-            <button class="buttonForm" id="volverAlim"> <i class="fa-solid fa-circle-chevron-left"></i> Volver</button>
+            <button class="buttonForm" id="volverAlim"> <i class="fa-solid fa-circle-chevron-left"></i>
+                Volver</button>
             <h4 class="titleForm" id="titleForm">Registra tus alimentos del día</h4>
+            <div id="txtAlim" class="col-sm-6 sm-4">
+                <div class="col-sm-2 sm-2">
+                    <img id="imgAlim" src="/Images/regImg.jpg" alt="imgAlim">
+                </div>
+                <div id="divAlim" class="col-sm-6 sm-2">
+                    <p id="pInfoAlim">
+                        Se ha demostrado que realizar un seguimiento de la ingesta diaria de alimentos ayuda a prevenir y a dejar de comer en exceso.
+                    </p>
+                    <p id="pInfoAlim2">
+                        Registra tus alimentos del día para organizar tu dieta, conocer el total de calorías que ingieres y 
+                        la proporción por grupo de alimentos
+                    </p>
+                    <img src="/Images/arrow.png" alt="imgFlecha" id="arrowAlim">
+                </div>
+            </div>
             <form id="formAlimentos" class="formCalculadoras">
                 <div class="mb-3">
                     <label class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="inputNombre" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Grupo de alimentos:</label>
+                    <label class="form-label">Grupo:</label>
                     <select id="selectGrupo" class="selectGroup" required>
                         <option value="" disabled selected>Seleccione...</option>
                         <option value="FyV">Frutas y verduras</option>
@@ -182,8 +232,27 @@
 
         <!-- form calculadora Grasa Corporal -->
         <div class="containerForm" id="containerFormGC">
-            <button class="buttonForm" id="volverGC"> <i class="fa-solid fa-circle-chevron-left"></i> Volver</button>
-            <h4 class="titleForm" id="titleForm">Completa tus datos para calcular tu porcentaje de Grasa Corporal</h4>
+            <button class="buttonForm" id="volverGC"> <i class="fa-solid fa-circle-chevron-left"></i>
+                Volver</button>
+            <h4 class="titleForm" id="titleForm">Completa tus datos para calcular tu porcentaje de Grasa Corporal </h4>
+            <div id="txtGC" class="col-sm-8 sm-4">
+                <div class="col-sm-2 sm-2">
+                    <img id="imgGC" src="/Images/grasaImg.jpg" alt="imgTMB">
+                </div>
+                <div id="divGC" class="col-sm-8 sm-2">
+                    <p id="pInfoGC">
+                        La grasa corporal es una de las formas en las que el cuerpo almacena energía de la comida. Esta
+                        ofrece un aislamiento esencial para regular la temperatura corporal y proteger
+                        órganos vitales y huesos. Muchas personas creen que alcanzar un porcentaje bajo en grasa es lo
+                        ideal, pero no es así, el cuerpo necesita algo de grasa para sobrevivir y un porcentaje
+                        demasiado bajo puede impactar seriamente algunas funciones biológicas vitales.
+                    </p>
+                    <p id="pInfoGC2">
+                        Calcula tu porcentaje de grasa corporal y descubre si te encuentras en un nivel saludable
+                    </p>
+                    <img src="/Images/arrow.png" alt="imgFlecha" id="arrow">
+                </div>
+            </div>
             <form id="formCalculadoraGC" class="formCalculadoras">
                 <div class=" mb-3">
                     <label class="form-label">Género:</label>
@@ -212,8 +281,26 @@
 
         <!-- form calculadora Agua -->
         <div class="containerForm" id="containerFormAgua">
-            <button class="buttonForm" id="volverAgua"> <i class="fa-solid fa-circle-chevron-left"></i> Volver</button>
+            <button class="buttonForm" id="volverAgua"> <i class="fa-solid fa-circle-chevron-left"></i>
+                Volver</button>
             <h3 class="titleForm" id="titleForm">Completa con tus datos para calcular tu Necesidad Hídrica diaria</h3>
+            <div id="txtAg" class="col-sm-8 sm-4">
+                <div class="col-sm-2 sm-2">
+                    <img id="imgAg" src="/Images/agua.jpg" alt="imgAgua">
+                </div>
+                <div id="divAg" class="col-sm-8 sm-2">
+                    <p id="pInfoAg">
+                        La hidratación es un componente esencial del rendimiento y de la
+                        salud. No empieces otro entrenamiento sin haberte hidratado y descubre cuánta agua deberías
+                        consumir para conseguir un rendimiento óptimo.
+                    </p>
+                    <p id="pInfoAg2">
+                        ¿Quieres saber cuánta agua deberías beber cada día? Usa esta calculadora de las necesidades
+                        hídricas para descubrirlo
+                    </p>
+                    <img src="/Images/arrow.png" alt="imgFlecha" id="arrowAg">
+                </div>
+            </div>
             <form id="formCalculadoraAg" class="formCalculadoras">
                 <div class="mb-3">
                     <label class="form-label">Peso en kg:</label>
@@ -279,4 +366,5 @@
     <script src="https://kit.fontawesome.com/e5eb0cd7d7.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
+
 </html>

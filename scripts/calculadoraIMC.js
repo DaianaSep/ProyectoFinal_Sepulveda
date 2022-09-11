@@ -1,6 +1,5 @@
-//Variables
+//Variables y constantes
 let genero, peso, altura, calculoImc, mensaje, pesoAnterior, pesoActual
-
 const resIMC = document.getElementById("p1")
 const compImc = document.getElementById("p2")
 const contIMC = document.getElementById("containerResultadosIMC")
@@ -15,7 +14,6 @@ const radiosImc = document.getElementsByName("genero")
 const compare = document.getElementById("compararPeso")
 const btnVolver = document.getElementById("volver")
 const divCards = document.getElementById("cardsInicio")
-
 
 //Eventos
 buttonImc.addEventListener('click', () => { // Al hacer click en el botón despliega el formulario
@@ -104,7 +102,7 @@ function interpretacionImcH(calculoImc) {
     }
     else if (20 < calculoImc && calculoImc <= 25) {
         resIMC.innerHTML = `<div> 
-                                <p> Tu IMC es: <b> ${calculoImc.toFixed(2)} </b> <i  onclick="infoImcH()" class="fa-solid fa-circle-info"></i> </p>
+                                <p> Tu IMC es: <b> ${calculoImc.toFixed(2)} </b> <i onclick="infoImcH()" class="fa-solid fa-circle-info"></i> </p>
                                 <p> Interpretación:  </p>
                                     <p id="normal"> 
                                         <i class="fa-solid fa-face-laugh-wink"></i><br>

@@ -1,8 +1,8 @@
-//Variables
+//Variables y constantes
 const divWeather = document.getElementById("divWtr")
 const API_KEY = "b70f5df831f83a9536bfa74601dccefb"
 let tipRandom, valorRandom
-let arrayTipsCalor = ["La hora del entrenamiento es fundamental. Evita hacer ejercicio al aire libre a primera hora de la tarde. El horario de más calor suele ser entre mediodía y las 3pm.",
+const arrayTipsCalor = ["La hora del entrenamiento es fundamental. Evita hacer ejercicio al aire libre a primera hora de la tarde. El horario de más calor suele ser entre mediodía y las 3pm.",
     "Hidrátete. Bebe agua durante la actividad física, así como antes y después, incluso si no tienes sed. Lleva siempre una botella de agua contigo.",
     "Vístete adecuadamente. Lleva ropa ligera y holgada de colores claros. Las telas transpirables también pueden ser de gran ayuda. Protéjete del sol utilizando lentes, una gorra o una visera y mucho protector solar resistente al sudor.",
     "Recarga energías con alimentos frescos. Prueba aperitivos ligeros y sanos que también te ayuden a mantenerte fresco antes y después de hacer ejercicio tales como frutas, batidos, ensaladas frías, verduras frescas, etc.",
@@ -38,7 +38,7 @@ fetch(`http://api.openweathermap.org/geo/1.0/direct?q=Buenos Aires,caba,Argentin
     })
 
 //Funciones
-//Muestra luego de 2 segundos un tip random según el tipo de clima
+//Muestra luego de 2 segundosde carga de página un tip random según el tipo de clima
 function mostrarTips(main) {
     setTimeout(() => {
         if (main.temp < 18) {//Tips para clima frío
@@ -131,14 +131,14 @@ function climaImg(main) {
 }
 
 //Redondea a 1 decimal la temperatura
-function roundTemp(main){
+function roundTemp(main) {
     let temperatura = 0
     temperatura = main.temp
     return (temperatura.toFixed(1))
 }
 
-//Redondea a 1 decimal la sensacióntérmica
-function roundST(main){
+//Redondea a 1 decimal la sensación térmica
+function roundST(main) {
     let sensTerm = 0
     sensTerm = main.feels_like
     return (sensTerm.toFixed(1))
